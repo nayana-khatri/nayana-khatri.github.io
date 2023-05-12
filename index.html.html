@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a layout of home page</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <header class="header">
+        <div class="hamburger-icon button hamburger-control">
+            <img src="./images/menu.svg">
+        </div>
+    </header>
+
+    <div class="hamburger-menu">
+        <a class="close" href="#">X</a>
+        <ul class="menu">
+            <li>
+                <a class="menu-list" href="#home" onclick="hamburgerMenuClose()">Home</a>
+            </li>
+            <li>
+                <a class="menu-list" href="#about-me" onclick="hamburgerMenuClose()">About Me</a>
+            </li>
+            <li>
+                <a class="menu-list" href="#my-projects" onclick="hamburgerMenuClose()">My Projects</a>
+            </li>
+            <li>
+                <a class="menu-list" href="#contact-me" onclick="hamburgerMenuClose()">Contact Me</a>
+            </li>
+            <li>
+                <a class="menu-list disclaimer modalWindow-control" href="#disclaimer">Disclaimer</a>
+            </li>
+        </ul>
+
+        <ul class="list">
+            <li>
+                <a class="link in" href="https://in.linkedin.com/" target="blank">in</a>
+            </li>
+            <li>
+                <a class="link g" href="https://www.google.com/" target="blank">G</a>
+            </li>
+            <li>
+                <a class="link f" href="https://facebook.com" target="blank">f</a>
+            </li>
+            <li>
+                <a class="link t" href="https://twitter.com/" target="blank">T</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="image-control" id="home">
+        <div class="image-overlay">
+            <h2 class="main-line">Welcome to my homepage!</h2>
+            <p class="contentOnImage">In my homepage you can find about me and my projects. For more information, fill
+                up the form in contact-me and click on the submit button.</p>
+        </div>
+        <img src="https://www.vieribottazzini.com/wp-content/uploads/X1DII1_00190_slide.jpg">
+    </div>
+
+
+    <div class="about-me" id="about-me">
+        <div class="container">
+            <h1 class="title">About Me</h1>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, deleniti labore?
+                Illum minima sit ab molestias odio nulla ipsum, ex temporibus nesciunt dicta officia at nostrum cum
+                voluptate unde error?</p>
+        </div>
+    </div>
+
+
+    <div class="my-projects" id="my-projects">
+        <div class="container">
+            <h1 class="title">My Projects</h1>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, deleniti labore?
+                Illum minima sit ab molestias odio nulla ipsum, ex temporibus nesciunt dicta officia at nostrum cum
+                voluptate unde error?</p>
+            <div class="tiles">
+                <a class="tile a" href="../Exercise/exercise-1/1.html" target="_blank">p1</a>
+                <a class="tile b" href="../Exercise/exercise-6/6.html" target="_blank">p2</a>
+                <a class="tile c" href="../Exercise/exercise-8/8.html" target="_blank">p3</a>
+                <a class="tile d" href="../Exercise/exercise-4/4.html" target="_blank">p4</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-footer">
+        <div class="container">
+            <a class="tile e"
+                href="https://www.slideteam.net/media/catalog/product/cache/960x720/t/h/thanks_for_visit_ppt_powerpoint_presentation_file_design_inspiration_Slide01.jpg"
+                target="_blank">Tq</a>
+
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, deleniti labore?
+                Illum minima sit ab molestias odio nulla ipsum, ex temporibus nesciunt dicta officia at nostrum cum
+                voluptate unde error?</p>
+        </div>
+    </div>
+
+
+    <div class="contact-me" id="contact-me">
+        <div class="container-form">
+            <h1 class="title">Contact Me</h1>
+            <form class="form" action="" method="get">
+                <div class="container1">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input name="name" type="text" placeholder="Name" id="name" data-required="true">
+                    </div>
+                    <div>
+                        <label for="mail">Email:</label>
+                        <input name="email" type="email" placeholder="Email" id="mail" data-required="true">
+                    </div>
+                    <div>
+                        <label for="mobile-no">Mobile No.:</label>
+                        <input type="int" name="mobile-no." placeholder="Mobile No." id="mobile-no">
+                    </div>
+                </div>
+                <div class="container2">
+                    <div>
+                        <label for="address">Address:</label>
+                        <textarea rows="3" name="address" placeholder="Address" id="address"></textarea>
+                    </div>
+                </div>
+                <div class="button-form">
+                    <button class="btn submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="modalWindow">
+        <div class="modalWindow-content">
+            <header class="modal-header">
+                <h1 class="modal-title">Modal Title</h1>
+                <a class="cross" href="#">X</a>
+            </header>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas beatae deserunt ducimus quis
+                asperiores cum, architecto id assumenda, repudiandae quasi eligendi dolore nihil ratione pariatur
+                doloremque consequatur? Nulla, accusantium.
+            </div>
+            <footer class="footer">
+                <button class="cross btnb">Close</button>
+            </footer>
+        </div>
+    </div>
+</body>
+
+
+<script src="layout-of-homepage.js"></script>
+
+</html>
